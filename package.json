@@ -1,0 +1,29 @@
+{
+  "name": "extract-summary",
+  "version": "1.0.0",
+  "description": "extracts summaries from Markdown or HTML files",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiatjaf/extract-summary.git"
+  },
+  "keywords": [
+    "markdown",
+    "static-site",
+    "html",
+    "summary"
+  ],
+  "author": "Giovanni T. Parra",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiatjaf/extract-summary/issues"
+  },
+  "homepage": "https://github.com/fiatjaf/extract-summary#readme",
+  "dependencies": {
+    "html-to-text": "^3.3.0",
+    "tape": "^4.8.0"
+  }
+}
