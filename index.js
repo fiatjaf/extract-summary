@@ -1,8 +1,15 @@
 const toText = require('html-to-text')
+const marked = require('marked')
 
 module.exports = extractSummary
 
 function extractSummary (content, ext) {
+  if (ext[0] === '.') ext = ext.slice(1)
+  if (ext === 'md') {
+    content = marked(content)
+    ext = 'html'
+  }
+
   var text = ext === 'html'
     ? toText.fromString(content, {ignoreHref: true, ignoreImage: true, wordwrap: 99999})
     : content
